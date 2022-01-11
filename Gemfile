@@ -9,8 +9,15 @@ gem "rails", "~> 7.0.1"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+# Use postgresql as the database for Active Record
+gem "pg"
+gem 'dotenv-rails'
+
+# Use SCSS for stylesheets
+gem 'sass-rails'
+
+# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+gem 'webpacker'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -41,6 +48,11 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+
+gem "jquery-rails"
+gem 'haml', '~> 5.2', '>= 5.2.2'
+gem 'simple_form', '~> 5.1'
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
