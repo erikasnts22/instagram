@@ -98,6 +98,7 @@ GEM
       dotenv (= 2.7.6)
       railties (>= 3.2)
     erubi (1.10.0)
+    erubis (2.7.0)
     execjs (2.8.1)
     ffi (1.15.5)
     globalid (1.0.0)
@@ -105,6 +106,17 @@ GEM
     haml (5.2.2)
       temple (>= 0.8.0)
       tilt
+    haml-rails (2.0.1)
+      actionpack (>= 5.1)
+      activesupport (>= 5.1)
+      haml (>= 4.0.6, < 6.0)
+      html2haml (>= 1.0.1)
+      railties (>= 5.1)
+    html2haml (2.2.0)
+      erubis (~> 2.7.0)
+      haml (>= 4.0, < 6)
+      nokogiri (>= 1.6.0)
+      ruby_parser (~> 3.5)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.0.1)
@@ -191,6 +203,8 @@ GEM
     reline (0.3.1)
       io-console (~> 0.5)
     rexml (3.2.5)
+    ruby_parser (3.18.1)
+      sexp_processor (~> 4.16)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -207,6 +221,7 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
+    sexp_processor (4.16.0)
     simple_form (5.1.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
@@ -260,6 +275,7 @@ DEPENDENCIES
   debug
   dotenv-rails
   haml (~> 5.2, >= 5.2.2)
+  haml-rails
   importmap-rails
   jbuilder
   jquery-rails
